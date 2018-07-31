@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>Ejercicios Avanzados - Estructuras de Control 8</title>
+  
+</head>
+<body>
+    
+ <p>Introduce un número del 1 al 5</p>
+ <input type ="number" id="numero"> 
+    <button onClick = "Check()">¿Qué número es este?</button>
+
+    <p id="demo"></p>
+<script>
+    function Check(){
+        var num = document.getElementById("numero").value;
+        var n = Number(num)
+        var mensaje = " ";
+        switch (n){
+    case 1:
+    mensaje = "UNO";
+    break;
+    case 2:
+    mensaje = "DOS";
+    break;
+    case 3:
+    mensaje = "TRES";
+    break;
+    case 4:
+    mensaje = "CUATRO";
+    break;
+    case 5:
+    mensaje = "CINCO";
+    break;
+    default:
+    mensaje = "El valor no es válido"
+    }
+        document.getElementById("demo").innerHTML = "El número introducido es " + mensaje;
+    }
+    
+</script>
+</body>
+
+</html>

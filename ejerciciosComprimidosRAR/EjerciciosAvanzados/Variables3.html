@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>Ejercicios Avanzados - Variables 3</title>
+  
+</head>
+<body>
+    
+    <h1>Vamos a sumar juntos:</h1>
+ <input type ="number" id="suma1" name="suma1"> + <input type ="number" id="suma2" name="suma2">
+        <button onclick="sumar()" value="+">¡Suma!</button>
+
+    <p id="demo"></p>
+<script>
+ function sumar(){
+        var x= document.getElementById("suma1").value;
+        var y= document.getElementById("suma2").value;
+    document.getElementById("demo").innerHTML = Number(x) + Number(y);
+    }
+    
+</script>
+</body>
+
+</html>

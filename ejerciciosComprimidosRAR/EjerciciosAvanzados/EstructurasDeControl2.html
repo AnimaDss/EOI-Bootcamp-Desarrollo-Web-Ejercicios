@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>Ejercicios Avanzados - Estructuras de Control 1</title>
+  
+</head>
+<body>
+    
+    <p>Por favor, introzca una nota</p>
+ <input type ="number" id="nota" name="nota">        <button onclick="notas()" value="+">Comprueba</button>
+
+<script>
+    function notas(){
+        var nota = document.getElementById("nota").value;
+        var n = Number(nota)
+        var mensaje = " "
+        switch (n){
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    mensaje = "Suspenso";
+    break;
+    case 5:
+    mensaje = "Suficiente";
+    break;
+    case 6:
+    mensaje = "Bien";
+    break;
+    case 7:
+    case 8:
+    mensaje = "Notable"
+    break;
+    case 9:
+    case 10:
+    mensaje = "Sobresaliente"
+    break;
+    default:
+    mensaje = "El valor no es válido"
+    }
+        alert (mensaje);
+    }
+    </script>
+</body>
+
+</html>

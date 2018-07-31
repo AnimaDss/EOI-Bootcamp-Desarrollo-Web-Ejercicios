@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>Ejercicios Avanzados - Estructuras de Control 5</title>
+  
+</head>
+<body>
+<p>Por favor, introduce una fecha cualquiera en el formato dd/mm/aaaa</p>
+    <input type="number" id="dayday">
+    <input type="number" id=mes>
+    <input type="number">
+    <button onClick="xmas()">¡Clickeame!</button>
+    <p id="demo"></p>
+<script>
+ function xmas(){
+     var dia = document.getElementById("dayday").value;
+     var d = Number(dia);
+     var mes = document.getElementById("mes").value;
+     var m = Number(mes);
+     
+     if (d == 25){
+         if (m == 12){
+         alert ("Este día es Navidad")}
+         else {
+        alert ("Este día no es Navidad")
+         }
+     } else {
+         alert ("Este día no es Navidad")
+     }
+ }
+</script>
+</body>
+
+</html>
