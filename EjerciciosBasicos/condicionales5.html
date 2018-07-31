@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicios de Condicionales 5</title>
+<meta charset="UTF-8">
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+                    switch (new Date().getDay()) {
+    case 0:
+        day = "Domingo, Lunes, Martes, Miercoles, Jueves, Viernes y Sabado";
+        break;
+    case 1:
+        day = "Lunes, Martes, Miercoles, Jueves, Viernes, Sabado y Domingo";
+        break;
+    case 2:
+        day = "Martes, Miercoles, Jueves, Viernes, Sabado, Domingo y Lunes";
+        break;
+    case 3:
+        day = "Miércoles, Jueves, Viernes, Sabado, Domingo, Lunes, y Martes";
+        break;
+    case 4:
+        day = "Jueves, Viernes, Sabado, Domingo, Lunes, Martes y Miercoles";
+        break;
+    case 5:
+        day = "Viernes, Sabado, Domingo, Lunes, Martes, Miercoles y Jueves";
+        break;
+    case  6:
+        day = "Sábado, Domingo, Lunes, Martes, Miercoles, Jueves y Viernes";
+}
+document.getElementById("demo").innerHTML = "Los días de la semana, empezando por hoy son  " + day;
+    </script>
+</body>
+</html>

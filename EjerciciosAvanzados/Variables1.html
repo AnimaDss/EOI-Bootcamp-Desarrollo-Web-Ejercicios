@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+<title>Ejercicios Avanzados - Variables 1</title>
+  
+</head>
+<body>
+<h1> Esta página muestra el nombre, edad y estado civil de 2 personas.</h1>
+<table border="1">
+   <tr>
+    <td id="nombreC"><b>Nombre</b></td>
+       <td id="apellidosC"><b>Apellidos</b></td>
+       <td id="edadC"><b>Edad</b></td>
+       <td id="civilC"><b>Estado Civil</b></td>
+    </tr>
+   <tr>
+    <td id="nombre1"></td>
+       <td id="apellidos1"></td>
+       <td id="edad1"></td>
+       <td id="civil1"></td>
+    </tr>
+    <tr>
+    <td id="nombre2"></td>
+       <td id="apellidos2"></td>
+       <td id="edad2"></td>
+       <td id="civil2"></td>
+    </tr>
+</table>
+    
+<script>
+var persona1 = {nombre:"Lola", apellidos:"Valdemoro Rivas", edad:"78", civil:"soltera"};
+    
+var persona2 = {nombre:"Juan Manuel", apellidos:"Garcia Lopez", edad:"14", civil:"soltero"};
+    
+document.getElementById("nombre1").innerHTML = persona1.nombre;
+document.getElementById("apellidos1").innerHTML = persona1.apellidos;
+document.getElementById("edad1").innerHTML = persona1.edad;
+document.getElementById("civil1").innerHTML = persona1.civil;
+    
+document.getElementById("nombre2").innerHTML = persona2.nombre;
+document.getElementById("apellidos2").innerHTML = persona2.apellidos;
+document.getElementById("edad2").innerHTML = persona2.edad;
+document.getElementById("civil2").innerHTML = persona2.civil;
+</script>
+</body>
+
+</html>
