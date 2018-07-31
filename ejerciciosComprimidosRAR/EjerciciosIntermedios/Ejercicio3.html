@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title>Ejercicio Intermedio 3</title>
+        
+        <script type="text/javascript"></script> 
+    
+    </head>
+    
+    <body>
+    <input type ="number" id="suma1" name="suma1"> + <input type ="number" id="suma2" name="suma2">
+        <button onclick="sumar()" value="+">¡Suma!</button>
+
+    <br>
+    
+ <input type ="number" id="restar1" name="restar1"> - <input type ="number" id="restar2" name="restar2">
+     <button onclick="restar()">¡Resta!</button>
+        
+        <br>
+    
+ <input type ="number" id="divide1" name="divide1"> / <input type ="number" id="divide2" name="divide2">
+     <button onclick="dividir()">¡Divide!</button>
+       
+        <br>
+    
+ <input type ="number" id="mult1" name="mult1"> * <input type ="number" id="mult2" name="mult2">
+     <button onclick="multiplicar()">¡Multiplica!</button>
+            <script>
+    function sumar(){
+        var x= document.getElementById("suma1").value;
+        var y= document.getElementById("suma2").value;
+        alert( Number(x) + Number(y));
+    }
+    
+                    function restar(){
+        var x= document.getElementById("restar1").value;
+        var y= document.getElementById("restar2").value;
+        alert(x - y);
+    }
+    
+                    
+                    function dividir(){
+        var x= document.getElementById("divide1").value;
+        var y= document.getElementById("divide2").value;
+        alert(x / y);
+    }
+    
+                    
+                    function multiplicar(){
+        var x= document.getElementById("mult1").value;
+        var y= document.getElementById("mult2").value;
+        alert(x * y);
+    }
+    
+                
+    </script>
+        
+        
+    </body>
+    
+</html>  
